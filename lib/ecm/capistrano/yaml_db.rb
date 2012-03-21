@@ -1,10 +1,10 @@
 require 'ecm/capistrano/common'
 
-configuration = Capistrano::Configuration.respond_to?(:instance) ?
-  Capistrano::Configuration.instance(:must_exist) :
-  Capistrano.configuration(:must_exist)
+unless Capistrano::Configuration.respond_to?(:instance)
+  abort "capistrano/ext/multistage requires Capistrano 2"
+end
 
-configuration.load do
+Capistrano::Configuration.instance.load do
   namespace :db do
     namespace :data do
       desc "dumps the db data to db/data.yml"

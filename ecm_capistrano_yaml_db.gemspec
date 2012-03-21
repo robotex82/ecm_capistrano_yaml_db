@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.name = "ecm_capistrano_yaml_db"
   s.summary = "Capistrano yaml db tasks"
   s.description = "Capistrano yaml db tasks"
-  s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Gemfile", "README.rdoc"]
+  s.files = Dir["{lib}/**/*"] + ["MIT-LICENSE", "Gemfile", "README.rdoc"]
+  s.require_paths = ["lib"]
   s.version = "0.0.1"
 end
