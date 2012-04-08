@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.description = "Capistrano yaml db tasks"
   s.files = Dir["{lib}/**/*"] + ["MIT-LICENSE", "Gemfile", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 end
