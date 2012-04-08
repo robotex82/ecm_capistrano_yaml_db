@@ -8,7 +8,7 @@ Capistrano::Configuration.instance.load do
   namespace :db do
     namespace :data do
       desc "Loads data from data.yml"
-      task :load, :roles => :app do
+      task :"_load", :roles => :app do
         run <<-CMD
           cd #{current_path}; 
           bundle exec rake RAILS_ENV=#{stage} db:data:load
