@@ -1,3 +1,21 @@
+= Installation
+
 Do not bundle the gem.
 
-Install it via gem install.
+1. Install it via gem install:
+
+  > gem install ecm_capistrano_yaml_db
+  
+2. require it in your deploy.rb file:
+
+  require 'ecm_capistrano_yaml_db'  
+  
+= Usage
+
+To dump the data to data.yml:
+
+  cap <stage> db:data:dump
+
+To load the data from data.yml:
+
+  cap <stage> db:data:load!
