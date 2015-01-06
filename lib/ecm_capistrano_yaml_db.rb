@@ -1,3 +1,3 @@
-require 'capistrano'
-require 'ecm/capistrano/yaml_db/common'
-require 'ecm/capistrano/yaml_db/tasks'
+#require 'capistrano'
+#require 'ecm/capistrano/yaml_db/common'
+#require 'ecm/capistrano/yaml_db/tasks'
